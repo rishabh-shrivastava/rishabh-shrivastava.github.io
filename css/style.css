@@ -53,7 +53,8 @@ ul {
     border-radius: 4px;
     transition: background-color 0.3s;
     display: inline-block;
-    margin-right: 8px;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .btn-small:hover {
@@ -267,7 +268,7 @@ nav {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    text-align: left;
+    text-align: center;
 }
 
 .patent-card:hover {
