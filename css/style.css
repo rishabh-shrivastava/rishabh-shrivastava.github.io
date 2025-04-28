@@ -143,231 +143,241 @@ nav {
     opacity: 0.9;
 }
 
-/* Featured projects section */
-.featured-projects {
-    padding: 80px 5%;
+.social-badges {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-badge:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.social-badge span {
+    margin-left: 5px;
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.experience-section h2 {
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.featured-projects h2 {
+.experience-category {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.experience-category h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+.experience-card {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
 }
 
-.project-card {
+.experience-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.experience-period {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.experience-card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.experience-card li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Patents Section */
+.patents-section {
+    padding: 4rem 2rem;
     background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    text-align: center;
 }
 
-.project-card:hover {
+.patents-section h2 {
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.patents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.patent-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.patent-card:hover {
     transform: translateY(-5px);
 }
 
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.patent-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
-.project-card h3 {
-    padding: 20px 20px 10px;
-    color: var(--secondary-color);
-}
-
-.project-card p {
-    padding: 0 20px 20px;
-    color: #666;
-}
-
-.project-card .btn-small {
-    margin: 0 8px 20px 20px;
-}
-
-.project-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 0 20px 15px;
-}
-
-.tech-tag {
-    font-size: 0.75rem;
-    padding: 4px 8px;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    color: var(--secondary-color);
-}
-
-/* Projects section */
-.projects-section {
-    padding: 60px 0;
-}
-
-/* Page header */
-.page-header {
-    background-color: var(--dark-bg);
-    color: white;
-    padding: 60px 0;
+/* Awards Section */
+.awards-section {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
     text-align: center;
 }
 
-.page-header h1 {
-    font-size: 2.5rem;
+.awards-section h2 {
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
 }
 
-/* About page styles */
-.about-content {
-    padding: 80px 0;
-}
-
-.about-grid {
+.awards-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
-    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.about-image img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.award-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
 }
 
-.about-text h2 {
-    margin-bottom: 20px;
-    color: var(--secondary-color);
+.award-card:hover {
+    transform: translateY(-5px);
 }
 
-.about-text h3 {
-    margin: 30px 0 15px;
-    color: var(--secondary-color);
+.award-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
-.about-text p {
-    margin-bottom: 15px;
-    color: #555;
+.award-card p {
+    color: #666;
+    line-height: 1.5;
 }
 
-.education-list li {
-    margin-bottom: 20px;
-    position: relative;
-    padding-left: 20px;
-    border-left: 2px solid var(--primary-color);
-}
-
-.education-list .year {
-    color: var(--primary-color);
-    font-weight: 500;
-}
-
-.education-list h4 {
-    margin: 5px 0;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 30px;
-}
-
-.skill-tag {
-    background-color: var(--light-bg);
-    color: var(--secondary-color);
-    padding: 8px 16px;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    border: 1px solid #ddd;
-}
-
-/* Contact page styles */
-.contact-section {
-    padding: 80px 0;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-}
-
-.contact-info h2,
-.contact-form h2 {
-    margin-bottom: 20px;
-    color: var(--secondary-color);
-}
-
-.contact-info p,
-.contact-form p {
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.contact-methods {
-    margin-top: 30px;
-}
-
-.contact-method {
-    margin-bottom: 30px;
-}
-
-.contact-method h3 {
-    margin-bottom: 10px;
-    color: var(--secondary-color);
-}
-
-.social-list li {
-    margin-bottom: 10px;
-}
-
-.social-list a {
-    transition: color 0.3s;
-}
-
-.social-list a:hover {
-    color: #2980b9;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
     border-radius: 4px;
-    font-family: inherit;
-    font-size: 1rem;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
 }
 
-.form-group textarea {
-    resize: vertical;
+.btn:hover {
+    background-color: #2980b9;
 }
 
-.form-note {
-    margin-top: 20px;
+.btn-small {
     font-size: 0.9rem;
-    color: #777;
-    font-style: italic;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn-small:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience-grid,
+    .patents-grid,
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-section,
+    .patents-section,
+    .awards-section {
+        padding: 2rem 1rem;
+    }
+
+    .social-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
 }
 
 /* Footer */
@@ -375,12 +385,12 @@ footer {
     background-color: var(--secondary-color);
     color: white;
     padding: 40px 5%;
+    text-align: center;
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .social-links {
@@ -441,151 +451,5 @@ footer {
     
     .contact-grid {
         grid-template-columns: 1fr;
-    }
-}
-
-/* Experience Section Styles */
-.experience-section {
-    padding: 4rem 2rem;
-    background-color: #f8f9fa;
-}
-
-.experience-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.experience-category {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.experience-category h3 {
-    color: #333;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.experience-card {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #eee;
-}
-
-.experience-card:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.experience-card h4 {
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.experience-period {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-.experience-card ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    margin-top: 0.5rem;
-}
-
-.experience-card li {
-    margin-bottom: 0.5rem;
-    line-height: 1.5;
-}
-
-/* Patents Section Styles */
-.patents-section {
-    padding: 4rem 2rem;
-    background-color: white;
-}
-
-.patents-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.patent-card {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.patent-card:hover {
-    transform: translateY(-5px);
-}
-
-.patent-card h3 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-/* Awards Section Styles */
-.awards-section {
-    padding: 4rem 2rem;
-    background-color: #f8f9fa;
-}
-
-.awards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.award-card {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.award-card:hover {
-    transform: translateY(-5px);
-}
-
-.award-card h3 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.award-card p {
-    color: #666;
-    line-height: 1.5;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .experience-grid,
-    .patents-grid,
-    .awards-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .experience-section,
-    .patents-section,
-    .awards-section {
-        padding: 2rem 1rem;
     }
 } 
